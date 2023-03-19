@@ -1,5 +1,7 @@
 # Parallel GPT
 
+Read [main.rs](src/main.rs) for details.
+
 ## Run
 
 ```
