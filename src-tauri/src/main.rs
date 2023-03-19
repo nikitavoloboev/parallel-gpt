@@ -10,6 +10,14 @@ fn greet(name: &str) -> String {
 fn main() {
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![greet])
+        .setup(|app| {
+            let mut shortcut_manager = app.global_shortcut_manager();
+            shortcut_manager.register("CommandOrControl+Shift+C", || {
+                println!("shortcut trigger");
+            });
+
+            Ok(())
+        })
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
