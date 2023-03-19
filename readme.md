@@ -1,6 +1,6 @@
 # Parallel GPT
 
-Read [main.rs](src/main.rs) for details.
+Read [main.rs](src-tauri/src/main.rs) for details.
 
 ## Run
 
