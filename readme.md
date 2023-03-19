@@ -1,7 +1,20 @@
-# Tauri + Solid + Typescript
+# Parallel GPT
 
-This template should help get you started developing with Tauri, Solid and Typescript in Vite.
+## Run
 
-## Recommended IDE Setup
+```
+pnpm i
+pnpm run dev
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## TODO
+
+- tauri solid app that listens to a websocket of local server
+  - maybe build on https://github.com/huntabyte/chatty
+- you select text, prompt it with `explain ..` async. then get notification when you get reply.
+- switch to it
+- each answer is in a separate tab
+- add modal to enter key. store it safely
+- add settings with hotkeys to map to which model with which pre prompt
+- combine it with sharegpt.dev
+- take ideas from https://reflect.academy/artificial-intelligence
